@@ -17,7 +17,7 @@ app.use(express.json());
 app.get( "/laddoos", (request,response)=>{
     const headers = request.headers;
     response.status(200).json({
-        status: "Success",
+        message: "Laddoos fetch successfully",
         data: laddoos    
     });
 });
